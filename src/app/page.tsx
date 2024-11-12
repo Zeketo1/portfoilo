@@ -31,6 +31,7 @@ import { Timeline } from "@/components/ui/timeline";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from "next/image";
 import { PinContainer } from "@/components/ui/3d-pin";
+import Link from "next/link";
 
 export default function Home() {
   const words = [
@@ -241,11 +242,14 @@ export default function Home() {
         <BackgroundBeamsWithCollision>
           <div className="flex flex-col items-center gap-10 w-[80%]">
             <TypewriterEffect words={words} />
-            <div className="w-fit block md:hidden bg-gradient-to-r from-blue-500 to-white p-[1px] rounded-[50px] cursor-pointer">
+            <Link
+              href="/contact"
+              className="w-fit block md:hidden bg-gradient-to-r from-blue-500 to-white p-[1px] rounded-[50px] cursor-pointer"
+            >
               <div className="bg-black py-4 px-10 rounded-[50px]">
                 Get In Touch
               </div>
-            </div>
+            </Link>
           </div>
         </BackgroundBeamsWithCollision>
         <GridBackgroundDemo />
@@ -314,7 +318,7 @@ export default function Home() {
           MY RECENT PROJECTS
         </h1>
         <div className="w-full flex justify-center mb-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 :w-[80%] gap-[100px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:w-[80%] gap-[100px]">
             {projects.map((item, i) => (
               <PinContainer key={i} title={item.title} href={item.link}>
                 <div className="flex gap-3 basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[21rem] ">
@@ -333,6 +337,24 @@ export default function Home() {
               </PinContainer>
             ))}
           </div>
+        </div>
+        <div className="flex flex-col py-10 items-center text-center">
+          <h1 className="text-center text-[40px] font-heading mb-10 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+            Looking to elevate your digital presence?
+          </h1>
+          <p className="opacity-90 mb-7 px-10">
+            Let&apos;s connect and explore how I can help bring your goals to
+            life. Reach out today, <br /> and let’s get started on creating
+            something exceptional together!
+          </p>
+          <Link
+            href="/contact"
+            className="z-[200] w-fit bg-gradient-to-r from-blue-500 to-white p-[1px] rounded-[50px] cursor-pointer"
+          >
+            <div className="bg-black py-4 px-10 rounded-[50px]">
+              Get In Touch
+            </div>
+          </Link>
         </div>
       </div>
     </div>

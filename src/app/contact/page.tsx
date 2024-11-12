@@ -1,0 +1,67 @@
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
+import Image from "next/image";
+import React from "react";
+import Me from "../../assets/me.jpg";
+import { FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
+import { CiLocationOn } from "react-icons/ci";
+
+export default function Contact() {
+  return (
+    <div className="relative h-screen w-full flex justify-center mb-10">
+      <StarsBackground />
+      <ShootingStars />
+      <div className="relative flex flex-col items-center w-[90%] md:w-[80%] xl:w-[60%]">
+        <div className="h-[15%]"></div>
+        <Image
+          src={Me}
+          alt="Me"
+          className="h-[150px] w-[150px] xl:h-[200px] xl:w-[200px] object-cover rounded-full absolute"
+        />
+        <div className="flex flex-col gap-10 h-fit w-[90%] md:w-[80%] xl:w-[60%] border border-white rounded-[100px_0_100px_0] py-20 px-10">
+          <div className="flex items-center gap-5 mt-5">
+            <FaPhone className="text-[18px] rotate-90 text-blue-500" />
+            <div>
+              <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+                Phone
+              </p>
+              <p>{`+2348134240564`}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-5">
+            <MdOutlineEmail className="text-[19px] text-blue-500" />
+            <div>
+              <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+                Phone
+              </p>
+              <p>{`ikorofrancis24@gmail.com`}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-5 mb-7">
+            <CiLocationOn className="text-[18px] text-blue-500" />
+            <div> 
+              <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+                Phone
+              </p>
+              <p>{`@ikorofrancis1`}</p>
+            </div>
+          </div>
+          <div className="flex justify-center gap-10">
+            <Link href="https://github.com/Zeketo1">
+              <FaGithub className="text-[25px]" />
+            </Link>
+            <Link href="https://wa.me/qr/YB2OLDP33P3UF1">
+              <FaWhatsapp className="text-[25px]" />
+            </Link>
+            <Link href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08">
+              <FaXTwitter className="text-[25px]" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

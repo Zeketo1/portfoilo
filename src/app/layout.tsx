@@ -5,6 +5,7 @@ import Logo from "@/common/Logo";
 import { HoverBorderGradient } from "@/components/ui/button";
 import Link from "next/link";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -53,32 +54,19 @@ export default function RootLayout({
           <div className="flex gap-8 items-center">
             <Logo style="h-12 w-16 mr-5" />
             {routes.map((item, i) => (
-              <div className="cursor-pointer" key={i}>{item.name}</div>
+              <div className="cursor-pointer" key={i}>
+                {item.name}
+              </div>
             ))}
           </div>
-          <Link className="hidden md:block" href="/about">
+          <Link className="hidden md:block" href="/contact">
             <HoverBorderGradient>Get In Touch</HoverBorderGradient>
           </Link>
         </div>
         {children}
         <div>
-          <div className="flex flex-col py-10 items-center text-center">
-            <h1 className="text-center text-[40px] font-heading mb-10 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
-              Looking to elevate your digital presence?
-            </h1>
-            <p className="opacity-90 mb-7">
-              Let&apos;s connect and explore how I can help bring your goals to
-              life. Reach out today, <br /> and let’s get started on creating
-              something exceptional together!
-            </p>
-            <div className="bg-gradient-to-r from-blue-500 to-white p-[1px] rounded-[50px] cursor-pointer">
-              <div className="bg-black py-4 px-10 rounded-[50px]">
-                Get In Touch
-              </div>
-            </div>
-          </div>
           <div className="flex justify-center w-full py-7">
-            <div className="w-full md:w-[80%] flex justify-between">
+            <div className="w-full md:w-[80%] flex justify-between px-10">
               <div>
                 Copyright &copy; 2024{" "}
                 <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
@@ -91,6 +79,9 @@ export default function RootLayout({
                 </Link>
                 <Link href="https://wa.me/qr/YB2OLDP33P3UF1">
                   <FaWhatsapp className="text-[25px]" />
+                </Link>
+                <Link href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08">
+                  <FaXTwitter className="text-[25px]" />
                 </Link>
               </div>
             </div>

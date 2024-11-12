@@ -6,6 +6,7 @@ import { HoverBorderGradient } from "@/components/ui/button";
 import Link from "next/link";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,6 +48,16 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="../assets/logo2.png" />
+        <meta property="og:title" content="Zek Tech" />
+        <meta
+          property="og:description"
+          content="My portfolio is a showcase of my work as a developer, featuring projects across web development, e-commerce, and interactive applications."
+        />
+        <meta property="og:image" content="../assets/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-text`}
       >

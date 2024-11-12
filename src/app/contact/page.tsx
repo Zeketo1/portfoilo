@@ -15,20 +15,20 @@ export default function Contact() {
       <StarsBackground />
       <ShootingStars />
       <div className="relative flex flex-col items-center w-[90%] md:w-[80%] xl:w-[60%]">
-        <div className="h-[20%]"></div>
+        <div className="h-[10%] md:h-[20%]"></div>
         <Image
           src={Me}
           alt="Me"
           className="h-[150px] w-[150px] xl:h-[200px] xl:w-[200px] object-cover rounded-full absolute"
         />
-        <div className="flex flex-col gap-10 h-[80%] w-[90%] md:w-[80%] xl:w-[60%] border border-white rounded-[100px_0_100px_0] py-20 px-10">
+        <div className="flex flex-col gap-10 h-[90%] md:h-[80%] w-[90%] md:w-[80%] xl:w-[60%] border border-white rounded-[100px_0_100px_0] py-20 px-10">
           <div className="flex items-center gap-5 mt-5">
             <FaPhone className="text-[18px] rotate-90 text-blue-500" />
             <div>
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Phone
               </p>
-              <p>{`+2348134240564`}</p>
+              <p className="text-[14px]">{`+2348134240564`}</p>
             </div>
           </div>
           <div className="flex items-center gap-5">
@@ -37,7 +37,7 @@ export default function Contact() {
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Gmail
               </p>
-              <p>{`ikorofrancis24@gmail.com`}</p>
+              <p className="text-[14px]">{`ikorofrancis24@gmail.com`}</p>
             </div>
           </div>
           <div className="flex items-center gap-5 mb-7">
@@ -46,7 +46,7 @@ export default function Contact() {
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Location
               </p>
-              <p>{`Enugu, Nigeria`}</p>
+              <p className="text-[14px]">{`Enugu, Nigeria`}</p>
             </div>
           </div>
           <div className="flex justify-center gap-10">

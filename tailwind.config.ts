@@ -23,6 +23,7 @@ const config: Config = {
       fontFamily: {
         heading: ["Playfair Display", "serif"],
         text: ["Lato", "sans-serif"],
+        text2: ["Sanchez", "serif"],
       },
     },
   },

@@ -27,6 +27,7 @@ import stack8 from "../assets/stack/reactjs.png";
 import stack9 from "../assets/stack/tailwind.png";
 import stack10 from "../assets/stack/redux.png";
 import stack11 from "../assets/stack/typescript.png";
+import stack12 from "../assets/stack/eoion.png";
 import { Timeline } from "@/components/ui/timeline";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from "next/image";
@@ -228,6 +229,7 @@ export default function Home() {
     { name: "Javascript", icon: stack3 },
     { name: "MySql", icon: stack4 },
     { name: "NextJs", icon: stack7 },
+    { name: "Eoion", icon: stack12 },
     { name: "ReactJs", icon: stack8 },
     { name: "Tailwind", icon: stack9 },
     { name: "Redux", icon: stack10 },
@@ -257,10 +259,10 @@ export default function Home() {
       <div className="py-4 md:py-10 w-full">
         <StarsBackground />
         <ShootingStars />
-        <h1 className="text-center text-[40px] font-heading mb-10 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+        <h1 className="text-center text-[40px] font-heading mb-10 text-white">
           ABOUT ME{" "}
         </h1>
-        <div className="font-text text-[18px] w-full flex flex-col items-center gap-10 mb-10">
+        <div className="font-text2 text-[18px] w-full flex flex-col items-center gap-10 mb-10">
           <div className="w-[70%] text-center opacity-90">
             Hello my name is{" "}
             <span className="text-blue-500 dark:text-blue-500">
@@ -295,7 +297,7 @@ export default function Home() {
         </div>
         <section id="techstack" className="w-full py-10 text-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
-            <h2 className="text-center text-[40px] font-heading mb-10 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+            <h2 className="text-center text-[40px] font-heading mb-10 text-white">
               My Tech Stack
             </h2>
             <div className="flex items-center flex-wrap justify-center gap-10">
@@ -314,7 +316,7 @@ export default function Home() {
             
         </section>
         <Timeline data={approachData} />
-        <h1 className="text-center text-[40px] font-heading mb-10 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+        <h1 className="text-center text-[40px] font-heading mb-10 text-white">
           MY RECENT PROJECTS
         </h1>
         <div className="w-full flex justify-center mb-10">
@@ -339,7 +341,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col py-10 items-center text-center">
-          <h1 className="text-center text-[40px] font-heading mb-10 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+          <h1 className="text-center text-[40px] font-heading mb-10 text-white">
             Looking to elevate your digital presence?
           </h1>
           <p className="opacity-90 mb-7 px-10">

@@ -27,6 +27,7 @@ import stack8 from "../assets/stack/reactjs.png";
 import stack9 from "../assets/stack/tailwind.png";
 import stack10 from "../assets/stack/redux.png";
 import stack11 from "../assets/stack/typescript.png";
+import stack12 from "../assets/stack/eoion.png";
 import { Timeline } from "@/components/ui/timeline";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from "next/image";
@@ -228,7 +229,7 @@ export default function Home() {
     { name: "Javascript", icon: stack3 },
     { name: "MySql", icon: stack4 },
     { name: "NextJs", icon: stack7 },
-    { name: "Eoion", icon: "https://raw.githubusercontent.com/DevBash1/eoion/refs/heads/main/icon.png" },
+    { name: "Eoion", icon: stack12 },
     { name: "ReactJs", icon: stack8 },
     { name: "Tailwind", icon: stack9 },
     { name: "Redux", icon: stack10 },

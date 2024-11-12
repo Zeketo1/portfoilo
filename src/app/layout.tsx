@@ -61,9 +61,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-text`}
       >
-        <div className="flex items-center justify-between py-4 px-14 sticky top-0 right-0 glass font-text z-[100]">
+        <div className="flex items-center justify-between py-4 px-4 md:px-14 sticky top-0 right-0 glass font-text z-[100]">
           <div className="flex gap-8 items-center">
-            <Logo style="h-12 w-16 mr-5" />
+            <Link href="/">
+              <Logo style="h-12 w-16 mr-5" />
+            </Link>
             {routes.map((item, i) => (
               <div className="cursor-pointer" key={i}>
                 {item.name}

@@ -35,7 +35,7 @@ export default function Contact() {
             <MdOutlineEmail className="text-[19px] text-blue-500" />
             <div>
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
-                Phone
+                Gmail
               </p>
               <p>{`ikorofrancis24@gmail.com`}</p>
             </div>
@@ -44,9 +44,9 @@ export default function Contact() {
             <CiLocationOn className="text-[18px] text-blue-500" />
             <div> 
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
-                Phone
+                Location
               </p>
-              <p>{`@ikorofrancis1`}</p>
+              <p>{`Enugu, Nigeria`}</p>
             </div>
           </div>
           <div className="flex justify-center gap-10">

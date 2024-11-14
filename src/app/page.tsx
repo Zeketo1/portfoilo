@@ -43,7 +43,7 @@ export default function Home() {
     { text: "Ideas" },
     { text: "into" },
     { text: "Engaging " },
-    { text: "Experiences", className: "text-blue-500 dark:text-blue-500" },
+    { text: "Experiences", className: "text-blue-500" },
   ];
 
   const approachData = [
@@ -51,7 +51,7 @@ export default function Home() {
       title: "Research & Learning",
       content: (
         <div>
-          <p className="text-neutral-800 opacity-90 dark:text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
             I believe in starting every project with a strong foundation. I
             invest time in thorough research and learning, often exploring
             multiple resources to understand the client&apos;s goals, target
@@ -82,7 +82,7 @@ export default function Home() {
       title: "User-Centric & Responsive Design",
       content: (
         <div>
-          <p className="text-neutral-800 opacity-90 dark:text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
             The user is at the heart of my design process. I focus on creating
             intuitive, easy-to-navigate interfaces that deliver a seamless
             experience across all devices. By understanding user behavior and
@@ -115,7 +115,7 @@ export default function Home() {
       title: "Collaboration & Feedback",
       content: (
         <div>
-          <p className="text-neutral-800 opacity-90 dark:text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
             I believe in the power of collaboration. Throughout the design
             process, I maintain open communication with clients, stakeholders,
             and development teams. This ensures that all perspectives are
@@ -144,7 +144,7 @@ export default function Home() {
       title: "Performance & Accessibility",
       content: (
         <div>
-          <p className="text-neutral-800 opacity-90 dark:text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
             A beautiful design is only effective if it performs well. I focus on
             optimizing websites for fast loading speeds and ensuring they are
             accessible to all users, including those with disabilities. This
@@ -265,7 +265,7 @@ export default function Home() {
         <div className="font-text2 text-[18px] w-full flex flex-col items-center gap-10 mb-10">
           <div className="w-[70%] text-center opacity-90">
             Hello my name is{" "}
-            <span className="text-blue-500 dark:text-blue-500">
+            <span className="text-blue-500">
               IKORO FRANCIS
             </span>
             , I’m a developer driven by a commitment to transform ideas into

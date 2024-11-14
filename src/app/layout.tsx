@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Head from "next/head";
+import { CiLinkedin } from "react-icons/ci";
 
 export const metadata: Metadata = {
   title: "Zek Tech Portfoilo",
@@ -63,7 +64,7 @@ export default function RootLayout({
           </Link>
         </div>
         {children}
-        <div>
+        <div className="shadow-2xl border-t border-t-white">
           <div className="flex justify-center w-full py-7">
             <div className="w-full md:w-[80%] flex justify-between px-10">
               <div>
@@ -81,6 +82,9 @@ export default function RootLayout({
                 </Link>
                 <Link href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08">
                   <FaXTwitter className="text-[25px]" />
+                </Link>
+                <Link href="https://www.linkedin.com/in/ikoro-francis-3341a9338/">
+                  <CiLinkedin className="text-[25px]" />
                 </Link>
               </div>
             </div>

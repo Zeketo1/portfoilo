@@ -7,7 +7,7 @@ import { FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-import { CiLocationOn } from "react-icons/ci";
+import { CiLinkedin, CiLocationOn } from "react-icons/ci";
 
 export default function Contact() {
   return (
@@ -42,7 +42,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center gap-5 mb-7">
             <CiLocationOn className="text-[18px] text-blue-500" />
-            <div> 
+            <div>
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Location
               </p>
@@ -58,6 +58,9 @@ export default function Contact() {
             </Link>
             <Link href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08">
               <FaXTwitter className="text-[25px]" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/ikoro-francis-3341a9338/">
+              <CiLinkedin className="text-[25px]" />
             </Link>
           </div>
         </div>

@@ -224,20 +224,20 @@ export default function Home() {
   ];
 
   const technologies = [
-    { name: "HTML 5", icon: stack1 },
-    { name: "CSS 3", icon: stack2 },
-    { name: "Javascript", icon: stack3 },
-    { name: "MySql", icon: stack4 },
     { name: "NextJs", icon: stack7 },
+    { name: "Typescript", icon: stack11 },
+    { name: "Javascript", icon: stack3 },
+    { name: "Firebase", icon: stack5 },
+    { name: "MySql", icon: stack4 },
     { name: "Eoion", icon: stack12 },
     { name: "ReactJs", icon: stack8 },
     { name: "Tailwind", icon: stack9 },
     { name: "Redux", icon: stack10 },
-    { name: "Typescript", icon: stack11 },
-    { name: "Firebase", icon: stack5 },
     { name: "Git", icon: stack6 },
+    { name: "CSS 3", icon: stack2 },
+    { name: "HTML 5", icon: stack1 },
   ];
-
+  
   return (
     <div className="relative">
       <div className="relative bg-background w-full h-[400px] md:h-[500px]">

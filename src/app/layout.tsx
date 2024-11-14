@@ -8,17 +8,6 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Head from "next/head";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 export const metadata: Metadata = {
   title: "Zek Tech Portfoilo",
   description: "I'm a frontend web developer",
@@ -58,9 +47,7 @@ export default function RootLayout({
         <meta property="og:image" content="../assets/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-text`}
-      >
+      <body>
         <div className="w-full flex items-center justify-between py-4 px-4 md:px-14 sticky top-0 right-0 glass font-text z-[100]">
           <div className="flex gap-8 items-center">
             <Link href="/">

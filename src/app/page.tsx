@@ -259,7 +259,7 @@ export default function Home() {
       <div className="py-4 md:py-10 w-full">
         <StarsBackground />
         <ShootingStars />
-        <h1 className="text-center text-[40px] font-heading mb-10 text-white">
+        <h1 id="about" className="text-center text-[40px] font-heading mb-10 text-white">
           ABOUT ME{" "}
         </h1>
         <div className="font-text2 text-[18px] w-full flex flex-col items-center gap-10 mb-10">
@@ -295,7 +295,7 @@ export default function Home() {
             technology.
           </div>
         </div>
-        <section id="techstack" className="w-full py-10 text-white">
+        <section id="stack" className="w-full py-10 text-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
             <h2 className="text-center text-[40px] font-heading mb-10 text-white">
               My Tech Stack
@@ -316,7 +316,7 @@ export default function Home() {
             
         </section>
         <Timeline data={approachData} />
-        <h1 className="text-center text-[40px] font-heading mb-10 text-white">
+        <h1 id="projects" className="text-center text-[40px] font-heading mb-10 text-white">
           MY RECENT PROJECTS
         </h1>
         <div className="w-full flex justify-center mb-10">

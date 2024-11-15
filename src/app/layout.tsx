@@ -24,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const routes: Location[] = [
-    { name: "About", position: "/" },
-    { name: "Stack", position: "/about" },
-    { name: "Projects", position: "/projects" },
+    { name: "About", position: "about" },
+    { name: "Stack", position: "stack" },
+    { name: "Projects", position: "projects" },
   ];
 
   // const position = (pos: number): void => {
@@ -54,9 +54,9 @@ export default function RootLayout({
               <Logo style="h-12 w-16 mr-5" />
             </Link>
             {routes.map((item, i) => (
-              <div className="cursor-pointer" key={i}>
+              <Link href={`#${item.position}`} className="cursor-pointer" key={i}>
                 {item.name}
-              </div>
+              </Link>
             ))}
           </div>
           <Link className="hidden md:block" href="/contact">

@@ -1,5 +1,3 @@
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams";
-import { GridBackgroundDemo } from "@/components/ui/background-grid-lines";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import research1 from "../assets/homepage/research1.png";
@@ -10,42 +8,15 @@ import research5 from "../assets/homepage/research5.png";
 import research6 from "../assets/homepage/research6.png";
 import research7 from "../assets/homepage/research7.png";
 import research8 from "../assets/homepage/research8.png";
-import project1 from "../assets/projects/project2.png";
-import project2 from "../assets/projects/project3.png";
-import project3 from "../assets/projects/project5.png";
-import project4 from "../assets/projects/project6.png";
-import project5 from "../assets/projects/project7.png";
-import project6 from "../assets/projects/project8.png";
-import stack1 from "../assets/stack/html.png";
-import stack2 from "../assets/stack/css.png";
-import stack3 from "../assets/stack/javascript.png";
-import stack4 from "../assets/stack/mysql.png";
-import stack5 from "../assets/stack/firebase.png";
-import stack6 from "../assets/stack/git.png";
-import stack7 from "../assets/stack/next.png";
-import stack8 from "../assets/stack/reactjs.png";
-import stack9 from "../assets/stack/tailwind.png";
-import stack10 from "../assets/stack/redux.png";
-import stack11 from "../assets/stack/typescript.png";
-import stack12 from "../assets/stack/eoion.png";
 import { Timeline } from "@/components/ui/timeline";
-import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from "next/image";
-import { PinContainer } from "@/components/ui/3d-pin";
 import Link from "next/link";
+import Banner from "@/components/layers/Banner";
+import About from "@/components/layers/About";
+import TechStack from "@/components/layers/TechStack";
+import Projects from "@/components/layers/Projects";
 
 export default function Home() {
-  const words = [
-    { text: "Creating" },
-    { text: "Cutting-edge" },
-    { text: "Tech, " },
-    { text: "Crafting" },
-    { text: "Ideas" },
-    { text: "into" },
-    { text: "Engaging " },
-    { text: "Experiences", className: "text-blue-500" },
-  ];
-
   const approachData = [
     {
       title: "Research & Learning",
@@ -172,174 +143,16 @@ export default function Home() {
     },
   ];
 
-  const projects = [
-    {
-      title: "/meta-blog",
-      link: "https://meta-blog-lemon.vercel.app/",
-      header: "MetaBlog",
-      image: project1,
-      description:
-        "Metablog is a platform designed for sharing insightful and informative content across various topics.",
-    },
-    {
-      title: "/luzto",
-      link: "https://luzto.vercel.app/",
-      header: "Luzto",
-      image: project2,
-      description:
-        "Luzto is a stylish, user-centered e-commerce platform focused on selling high-quality clothing.",
-    },
-    {
-      title: "/decor-vista",
-      link: "https://decor-vista-three.vercel.app/",
-      header: "Decor-vista",
-      image: project3,
-      description:
-        "Decor-vita is a curated e-commerce destination for stylish furniture and home interiors, offering a range of items to enhance any living space.",
-    },
-    {
-      title: "/papyrus",
-      link: "https://papyrus-ten.vercel.app/",
-      header: "Papyrus",
-      image: project6,
-      description:
-        "Papyrus is a thoughtfully designed e-commerce store specializing in unique gift cards, present bags, and boxes.",
-    },
-    {
-      title: "/not-active",
-      link: "/",
-      header: "Z-vibes",
-      image: project4,
-      description:
-        "This music player app is designed for seamless listening, offering a sleek interface and personalized experience.",
-    },
-    {
-      title: "/zek-tech",
-      link: "",
-      header: "Zek-tech",
-      image: project5,
-      description:
-        "My portfolio is a showcase of my work as a developer, featuring projects across web development, e-commerce, and interactive applications.",
-    },
-  ];
-
-  const technologies = [
-    { name: "NextJs", icon: stack7 },
-    { name: "Typescript", icon: stack11 },
-    { name: "Javascript", icon: stack3 },
-    { name: "Firebase", icon: stack5 },
-    { name: "MySql", icon: stack4 },
-    { name: "Eoion", icon: stack12 },
-    { name: "ReactJs", icon: stack8 },
-    { name: "Tailwind", icon: stack9 },
-    { name: "Redux", icon: stack10 },
-    { name: "Git", icon: stack6 },
-    { name: "CSS 3", icon: stack2 },
-    { name: "HTML 5", icon: stack1 },
-  ];
-  
   return (
     <div className="relative">
-      <div className="relative bg-background w-full h-[400px] md:h-[500px]">
-        <BackgroundBeamsWithCollision>
-          <div className="flex flex-col items-center gap-10 w-[80%]">
-            <TypewriterEffect words={words} />
-            <Link
-              href="/contact"
-              className="w-fit block md:hidden bg-gradient-to-r from-blue-500 to-white p-[1px] rounded-[50px] cursor-pointer"
-            >
-              <div className="bg-black py-4 px-10 rounded-[50px]">
-                Get In Touch
-              </div>
-            </Link>
-          </div>
-        </BackgroundBeamsWithCollision>
-        <GridBackgroundDemo />
-      </div>
+      <Banner />
       <div className="py-4 md:py-10 w-full">
         <StarsBackground />
         <ShootingStars />
-        <h1 id="about" className="text-center text-[40px] font-heading mb-10 text-white">
-          ABOUT ME{" "}
-        </h1>
-        <div className="font-text2 text-[18px] w-full flex flex-col items-center gap-10 mb-10">
-          <div className="w-[70%] text-center opacity-90">
-            Hello my name is{" "}
-            <span className="text-blue-500">
-              IKORO FRANCIS
-            </span>
-            , I’m a developer driven by a commitment to transform ideas into
-            powerful, seamless user experiences. With expertise in Next.js and
-            React, I build solutions that are efficient, adaptable, and ready to
-            perform in real-world applications. My approach emphasizes clean,
-            maintainable code and a sharp focus on resolving complex issues
-            while ensuring compatibility across environments.
-          </div>
-          <div className="w-[70%] text-center opacity-90">
-            Crafting user interfaces that are both friendly and responsive is at
-            the heart of my work. I believe that each interaction, from the
-            smallest button to the largest layout, should feel effortless and
-            engaging, allowing users to connect with technology in intuitive
-            ways. Every detail matters—from smooth animations to lightning-fast
-            load times—because I know that thoughtful design makes a meaningful
-            difference in how users experience digital products.
-          </div>
-          <div className="w-[70%] text-center opacity-90">
-            Beyond technical skill, I’m dedicated to creating an enjoyable and
-            welcoming experience for users of all backgrounds. I strive to
-            integrate empathy into design, aiming to make interfaces accessible
-            and user-friendly. In each project, I combine creativity and
-            precision to deliver products that look as good as they perform,
-            delivering both beauty and impact. For me, development is about more
-            than writing code; it’s about creating connections through
-            technology.
-          </div>
-        </div>
-        <section id="stack" className="w-full py-10 text-white">
-          <div className="max-w-6xl mx-auto px-4 text-center">
-            <h2 className="text-center text-[40px] font-heading mb-10 text-white">
-              My Tech Stack
-            </h2>
-            <div className="flex items-center flex-wrap justify-center gap-10">
-              {technologies.map(({ name, icon }, idx) => (
-                <div key={idx} className="flex flex-col gap-2">
-                  <div className="relative inline-flex items-center justify-center p-[2px] rounded-full overflow-hidden">
-                    <div className="relative h-20 z-20 w-20 rounded-full bg-black-100 flex items-center justify-center">
-                      <Image src={icon} alt={name} width={60} height={60} />
-                    </div>
-                  </div>
-                  <p className="text-[10px]">{name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-            
-        </section>
+        <About />
+        <TechStack />
         <Timeline data={approachData} />
-        <h1 id="projects" className="text-center text-[40px] font-heading mb-10 text-white">
-          MY RECENT PROJECTS
-        </h1>
-        <div className="w-full flex justify-center mb-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:w-[80%] gap-[100px]">
-            {projects.map((item, i) => (
-              <PinContainer key={i} title={item.title} href={item.link}>
-                <div className="flex gap-3 basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[21rem] ">
-                  <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                    {item.header}
-                  </h3>
-                  <div className="text-base !m-0 !p-0 font-normal">
-                    <span className="text-slate-500 ">{item.description}</span>
-                  </div>
-                  <Image
-                    src={item.image}
-                    alt={item.header}
-                    className="w-full object-cover"
-                  />
-                </div>
-              </PinContainer>
-            ))}
-          </div>
-        </div>
+        <Projects />
         <div className="flex flex-col py-10 items-center text-center">
           <h1 className="text-center text-[40px] font-heading mb-10 text-white">
             Looking to elevate your digital presence?

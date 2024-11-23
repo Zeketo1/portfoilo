@@ -7,9 +7,10 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Head from "next/head";
 import { CiLinkedin } from "react-icons/ci";
+import Navigation from "@/components/utils/navigation";
 
 export const metadata: Metadata = {
-  title: "Zek Tech Portfoilo",
+  title: "Zek Tech Portfolio",
   description: "I'm a frontend web developer",
 };
 
@@ -29,12 +30,6 @@ export default function RootLayout({
     { name: "Projects", position: "projects" },
   ];
 
-  // const position = (pos: number): void => {
-  //   window.scrollTo({ top: pos, behavior: "smooth" });
-  // };
-
-  // console.log(window.scrollY)
-
   return (
     <html lang="en">
       <Head>
@@ -53,10 +48,8 @@ export default function RootLayout({
             <Link href="/">
               <Logo style="h-12 w-16 mr-5" />
             </Link>
-            {routes.map((item, i) => (
-              <Link href={`#${item.position}`} className="cursor-pointer" key={i}>
-                {item.name}
-              </Link>
+            {routes.map(({ name, position }, i) => (
+              <Navigation key={i} name={name} position={position} />
             ))}
           </div>
           <Link className="hidden md:block" href="/contact">

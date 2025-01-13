@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "Frontend",
     "Business Solutions",
   ],
+  verification: {
+    google: 'fpTeomZaoNfgrjEK6jd8S3rspQryrmRWCvYde0WjxvY'
+  }
 };
 
 type Location = {

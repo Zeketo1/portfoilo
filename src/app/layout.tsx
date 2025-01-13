@@ -10,8 +10,23 @@ import { CiLinkedin } from "react-icons/ci";
 import Navigation from "@/components/utils/navigation";
 
 export const metadata: Metadata = {
-  title: "Zek Tech Portfolio",
-  description: "I'm a frontend web developer",
+  metadataBase: new URL("https://zek-tech.vercel.app/"),
+  title: {
+    default: "Zek-Tech Portfolio",
+    template: " %s | Zek-Tech Portfolio",
+  },
+  description:
+    "I’m a developer driven by a commitment to transform ideas into powerful, seamless user experiences. With expertise in Next.js and React, I build solutions that are efficient, adaptable, and ready to perform in real-world applications.",
+  keywords: [
+    "Zek Tech",
+    "Zek-Tech",
+    "zek-tech",
+    "Zeketo",
+    "Web Development",
+    "Frontend Developer",
+    "Frontend",
+    "Business Solutions",
+  ],
 };
 
 type Location = {

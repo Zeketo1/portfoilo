@@ -2,12 +2,21 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
 import React from "react";
-import Me from "../../assets/me.jpg";
+import Me from "../../assets/WhatsApp Image 2025-01-12 at 06.42.53_7f203de7.jpg";
 import { FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { CiLinkedin, CiLocationOn } from "react-icons/ci";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "You can reach out to me through these.",
+  openGraph: {
+    url: "https://zek-tech.vercel.app/contact",
+  },
+};
 
 export default function Contact() {
   return (
@@ -56,10 +65,16 @@ export default function Contact() {
             <Link href="https://wa.me/qr/YB2OLDP33P3UF1" target="_blank">
               <FaWhatsapp className="text-[25px]" />
             </Link>
-            <Link href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08" target="_blank">
+            <Link
+              href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08"
+              target="_blank"
+            >
               <FaXTwitter className="text-[25px]" />
             </Link>
-            <Link href="https://www.linkedin.com/in/ikoro-francis-3341a9338/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/ikoro-francis-3341a9338/"
+              target="_blank"
+            >
               <CiLinkedin className="text-[25px]" />
             </Link>
           </div>

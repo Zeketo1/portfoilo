@@ -26,6 +26,10 @@ export default function Contact() {
       <div className="relative flex flex-col items-center w-[90%] md:w-[80%] xl:w-[60%]">
         <div className="h-[10%] md:h-[18%]"></div>
         <Image
+          width={500}
+          height={500}
+          priority
+          quality={100}
           src={Me}
           alt="Me"
           className="h-[150px] w-[150px] xl:h-[200px] xl:w-[200px] object-cover rounded-full absolute"

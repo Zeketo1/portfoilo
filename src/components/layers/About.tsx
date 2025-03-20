@@ -9,7 +9,7 @@ export default function About() {
       >
         ABOUT ME{" "}
       </h1>
-      <div className="font-text2 text-[18px] w-full flex flex-col items-center gap-10 mb-10">
+      <div className="text-[18px] w-full flex flex-col items-center gap-10 mb-10">
         <div className="w-[70%] text-center opacity-90">
           Hello my name is <span className="text-blue-500">IKORO FRANCIS</span>,
           I’m a developer driven by a commitment to transform ideas into
@@ -19,7 +19,7 @@ export default function About() {
           maintainable code and a sharp focus on resolving complex issues while
           ensuring compatibility across environments.
         </div>
-        <div className="w-[70%] text-center opacity-90">
+        {/* <div className="w-[70%] text-center opacity-90">
           Crafting user interfaces that are both friendly and responsive is at
           the heart of my work. I believe that each interaction, from the
           smallest button to the largest layout, should feel effortless and
@@ -36,7 +36,7 @@ export default function About() {
           to deliver products that look as good as they perform, delivering both
           beauty and impact. For me, development is about more than writing
           code; it’s about creating connections through technology.
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -21,9 +21,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        heading: ["Playfair Display", "serif"],
-        text: ["Lato", "sans-serif"],
-        text2: ["Sanchez", "serif"],
+        heading: ["Bitter", "serif"],
+        text: ["Raleway", "sans-serif"],
       },
     },
   },

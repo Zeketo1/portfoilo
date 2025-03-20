@@ -22,7 +22,7 @@ export default function Home() {
       title: "Research & Learning",
       content: (
         <div>
-          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] leading-relaxed font-normal mb-8">
             I believe in starting every project with a strong foundation. I
             invest time in thorough research and learning, often exploring
             multiple resources to understand the client&apos;s goals, target
@@ -53,7 +53,7 @@ export default function Home() {
       title: "User-Centric & Responsive Design",
       content: (
         <div>
-          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] leading-relaxed font-normal mb-8">
             The user is at the heart of my design process. I focus on creating
             intuitive, easy-to-navigate interfaces that deliver a seamless
             experience across all devices. By understanding user behavior and
@@ -86,7 +86,7 @@ export default function Home() {
       title: "Collaboration & Feedback",
       content: (
         <div>
-          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] leading-relaxed font-normal mb-8">
             I believe in the power of collaboration. Throughout the design
             process, I maintain open communication with clients, stakeholders,
             and development teams. This ensures that all perspectives are
@@ -115,7 +115,7 @@ export default function Home() {
       title: "Performance & Accessibility",
       content: (
         <div>
-          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] font-text leading-relaxed font-normal mb-8">
+          <p className="opacity-90 text-neutral-200 text-xs md:text-[16px] leading-relaxed font-normal mb-8">
             A beautiful design is only effective if it performs well. I focus on
             optimizing websites for fast loading speeds and ensuring they are
             accessible to all users, including those with disabilities. This

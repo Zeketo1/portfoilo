@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./index.css"
 import Logo from "@/common/Logo";
 import { HoverBorderGradient } from "@/components/ui/button";
 import Link from "next/link";
@@ -61,7 +62,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <body>
-        <div className="w-full flex items-center justify-between py-4 px-4 md:px-14 sticky top-0 right-0 glass font-text z-[100]">
+        <div className="w-full flex items-center justify-between py-4 px-4 md:px-14 sticky top-0 right-0 glass z-[100]">
           <div className="flex gap-8 items-center">
             <Link href="/">
               <Logo style="h-12 w-16 mr-5" />

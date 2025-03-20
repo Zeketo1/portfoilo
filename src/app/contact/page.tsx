@@ -41,7 +41,10 @@ export default function Contact() {
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Phone
               </p>
-              <p className="text-[14px]">{`+2348134240564`}</p>
+              <a
+                href="tel:+2348134240564"
+                className="text-[14px] font-heading underline"
+              >{`+2348134240564`}</a>
             </div>
           </div>
           <div className="flex items-center gap-5">
@@ -50,7 +53,10 @@ export default function Contact() {
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Gmail
               </p>
-              <p className="text-[14px]">{`zek.tech24@gmail.com`}</p>
+              <a
+                href="mailto:zek.tech24@gmail.com"
+                className="text-[14px] font-heading underline"
+              >{`zek.tech24@gmail.com`}</a>
             </div>
           </div>
           <div className="flex items-center gap-5 mb-7">

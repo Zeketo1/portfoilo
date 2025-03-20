@@ -50,7 +50,7 @@ export default function Contact() {
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                 Gmail
               </p>
-              <p className="text-[14px]">{`ikorofrancis24@gmail.com`}</p>
+              <p className="text-[14px]">{`zek.tech24@gmail.com`}</p>
             </div>
           </div>
           <div className="flex items-center gap-5 mb-7">

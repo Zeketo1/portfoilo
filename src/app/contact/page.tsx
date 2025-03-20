@@ -66,7 +66,7 @@ export default function Contact() {
             <Link href="https://github.com/Zeketo1" target="_blank">
               <FaGithub className="text-[25px]" />
             </Link>
-            <Link href="https://wa.me/qr/YB2OLDP33P3UF1" target="_blank">
+            <Link href="https://wa.me/2348134240564" target="_blank">
               <FaWhatsapp className="text-[25px]" />
             </Link>
             <Link

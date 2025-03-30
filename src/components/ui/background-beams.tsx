@@ -128,7 +128,7 @@ const CollisionMechanism = React.forwardRef<
   const useless = ref;
   const [beamKey, setBeamKey] = useState(0);
   const [cycleCollisionDetected, setCycleCollisionDetected] = useState(false);
-  console.log(useless)
+  console.debug(useless)
 
   useEffect(() => {
     const checkCollision = () => {

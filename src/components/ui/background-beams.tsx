@@ -125,10 +125,8 @@ const CollisionMechanism = React.forwardRef<
     detected: false,
     coordinates: null,
   });
-  const useless = ref;
   const [beamKey, setBeamKey] = useState(0);
   const [cycleCollisionDetected, setCycleCollisionDetected] = useState(false);
-  console.debug(useless)
 
   useEffect(() => {
     const checkCollision = () => {
@@ -213,6 +211,7 @@ const CollisionMechanism = React.forwardRef<
           <Explosion
             key={`${collision.coordinates.x}-${collision.coordinates.y}`}
             className=""
+            ref={ref}
             style={{
               left: `${collision.coordinates.x}px`,
               top: `${collision.coordinates.y}px`,

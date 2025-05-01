@@ -3,7 +3,7 @@ import React from "react";
 import stack1 from "../../assets/stack/html.png";
 import stack2 from "../../assets/stack/css.png";
 import stack3 from "../../assets/stack/javascript.png";
-import stack4 from "../../assets/stack/mysql.png";
+// import stack4 from "../../assets/stack/mysql.png";
 import stack5 from "../../assets/stack/firebase.png";
 import stack6 from "../../assets/stack/git.png";
 import stack7 from "../../assets/stack/next.png";
@@ -12,6 +12,7 @@ import stack9 from "../../assets/stack/tailwind.png";
 import stack10 from "../../assets/stack/redux.png";
 import stack11 from "../../assets/stack/typescript.png";
 import stack12 from "../../assets/stack/eoion.png";
+import stack13 from "../../assets/tech/convex_logo.svg";
 
 export default function TechStack() {
   const technologies = [
@@ -19,7 +20,8 @@ export default function TechStack() {
     { name: "Typescript", icon: stack11 },
     { name: "Javascript", icon: stack3 },
     { name: "Firebase", icon: stack5 },
-    { name: "MySql", icon: stack4 },
+    { name: "Convex", icon: stack13 },
+    // { name: "MySql", icon: stack4 },
     { name: "Eoion", icon: stack12 },
     { name: "ReactJs", icon: stack8 },
     { name: "Tailwind", icon: stack9 },

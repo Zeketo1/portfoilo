@@ -8,7 +8,9 @@ import project5 from "../../assets/projects/project7.png";
 import project6 from "../../assets/projects/project8.png";
 import project7 from "../../assets/projects/project9.png";
 import project8 from "../../assets/projects/project10.png";
-import next from "../../assets/tech/next.png";
+import project9 from "../../assets/projects/project11.png";
+import project10 from "../../assets/projects/project12.png";
+import nextjs from "../../assets/tech/next.png";
 import react from "../../assets/tech/reactjs.png";
 import typescript from "../../assets/tech/typescript.png";
 import javascript from "../../assets/tech/javascript.png";
@@ -17,6 +19,7 @@ import firebase from "../../assets/tech/firebase.png";
 import tailwind from "../../assets/tech/tailwind.png";
 import css from "../../assets/tech/css.png";
 import python from "../../assets/tech/python.png";
+import convex from "../../assets/tech/convex_logo.svg";
 
 import Image from "next/image";
 
@@ -39,6 +42,24 @@ export default function Projects() {
       tech: [html, css, javascript, python],
       description:
         "A full-stack platform for seamless hotel reservations, user management, and administrative oversight with secure authentication and real-time updates.",
+    },
+    {
+      title: "/teeceehub",
+      link: "https://www.teeceehub.com/",
+      header: "TeeCee Hub",
+      image: project9,
+      tech: [nextjs, tailwind, convex],
+      description:
+        "At TC Hub, Experience endless digital creativity as we empower you with innovative solutions tailored to your needs.",
+    },
+    {
+      title: "/kingsprecisecleaning",
+      link: "https://www.kingsprecisecleaning.com/",
+      header: "Kings-precise cleaning",
+      image: project10,
+      tech: [react, tailwind],
+      description:
+        "Kings-precise cleaning, We offer a wide range of professional cleaning services to suit every space, ensuring a clean, hygienic, and welcoming environment.",
     },
     {
       title: "/rheem",
@@ -89,7 +110,7 @@ export default function Projects() {
       link: "",
       header: "Zek-tech",
       image: project5,
-      tech: [next, typescript, tailwind],
+      tech: [nextjs, typescript, tailwind],
       description:
         "My portfolio is a showcase of my work as a developer, featuring projects across web development, e-commerce, and interactive applications.",
     },
@@ -119,6 +140,7 @@ export default function Projects() {
                         src={tech}
                         alt="tech"
                         className="w-[20px] h-[20px] object-cover"
+                        priority={true}
                       />
                     ))}
                   </div>
@@ -130,6 +152,7 @@ export default function Projects() {
                   src={item.image}
                   alt={item.header}
                   className="w-full object-cover"
+                  priority={true}
                 />
               </div>
             </PinContainer>

@@ -28,7 +28,7 @@ export default function Contact() {
         <Image
           width={500}
           height={500}
-          priority
+          priority={true}
           quality={100}
           src={Me}
           alt="Me"

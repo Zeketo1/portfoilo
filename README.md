@@ -30,17 +30,14 @@ My design philosophy is centered on:
 
 ## 🚀 Featured Projects
 
-### 🌐 [Metablog](https://meta-blog-lemon.vercel.app/)
+### 🌐 [Metablog](https://github.com/Zeketo1/MetaBlog)
 A modern blogging platform built with Next.js, designed for seamless content creation and discovery.
 
-### 👚 [Luzto](https://luzto.vercel.app/)
+### 👚 [Luzto](https://github.com/Zeketo1/Luzto)
 An e-commerce site for clothing, featuring smooth navigation, responsive design, and shopping cart functionality.
 
-### 🛋️ [Decor-vita](https://decor-vista-three.vercel.app/)
+### 🛋️ [Decor-vita](https://github.com/Zeketo1/Decor_vista)
 A furniture and home decor platform, integrating clean product layouts and detailed filtering systems.
-
-### 🎵 [TeeCee Hub](https://www.teeceehub.com/)
-A web-based tech hub company portfoilo built on nextjs and has full admin functionalites.
 
 ## 📬 Contact Me
 
@@ -49,6 +46,7 @@ Want to work together or just say hello?
 - **Email:** [ikorofrancis24@gmail.com](mailto:ikorofrancis24@gmail.com)
 - **LinkedIn:** [linkedin.com/in/ikorofrancis](https://www.linkedin.com/in/ikoro-francis-3341a9338/)
 - **Twitter:** [@ikorofrancis1](https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08)
+- **Portfoilo Website:** [Zek-Tech](https://zek-tech.vercel.app/)
 
 ---
 

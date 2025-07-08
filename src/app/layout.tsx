@@ -6,7 +6,6 @@ import { HoverBorderGradient } from "@/components/ui/button";
 import Link from "next/link";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Head from "next/head";
 import { CiLinkedin } from "react-icons/ci";
 import Navigation from "@/components/utils/navigation";
 
@@ -30,7 +29,16 @@ export const metadata: Metadata = {
   ],
   verification: {
     google: 'fpTeomZaoNfgrjEK6jd8S3rspQryrmRWCvYde0WjxvY'
-  }
+  },
+  icons: {
+    icon: "/assets/logo2.png",
+  },
+  openGraph: {
+    images: ["/assets/logo.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 type Location = {
@@ -51,16 +59,6 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="../assets/logo2.png" />
-        <meta property="og:title" content="Zek Tech" />
-        <meta
-          property="og:description"
-          content="My portfolio is a showcase of my work as a developer, featuring projects across web development, e-commerce, and interactive applications."
-        />
-        <meta property="og:image" content="../assets/logo.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
       <body>
         <div className="w-full flex items-center justify-between py-4 px-4 md:px-14 sticky top-0 right-0 glass z-[100]">
           <div className="flex gap-8 items-center">

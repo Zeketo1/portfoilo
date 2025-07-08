@@ -128,7 +128,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-3 md:w-[80%] gap-[100px]">
           {projects.map((item, i) => (
             <PinContainer key={i} title={item.title} href={item.link}>
-              <div className="flex gap-3 basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[21rem] ">
+              <div className="flex gap-3 justify-between basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[21rem] ">
                 <div className="flex items-center justify-between">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                     {item.header}

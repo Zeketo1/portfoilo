@@ -76,14 +76,14 @@ export default function RootLayout({
         {children}
         <div className="shadow-2xl border-t border-t-white">
           <div className="flex justify-center w-full py-7">
-            <div className="w-full md:w-[80%] flex justify-between px-10">
+            <div className="w-full flex flex-wrap gap-4 justify-between px-10">
               <div>
-                Copyright &copy; 2024{" "}
+                Copyright &copy; {new Date().getFullYear()} 
                 <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
-                  IKORO FRANCIS
-                </span>{" "}
+                  {" "}IKORO FRANCIS
+                </span>
               </div>
-              <div className="flex gap-7">
+              <div className="flex w-full sm:w-fit justify-center sm:justify-start gap-7">
                 <Link href="https://github.com/Zeketo1" target="_blank">
                   <FaGithub className="text-[25px]" />
                 </Link>

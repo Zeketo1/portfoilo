@@ -154,7 +154,7 @@ export default function Home() {
         <Timeline data={approachData} />
         <Projects />
         <div className="flex flex-col py-10 items-center text-center">
-          <h1 className="text-center text-[40px] font-heading mb-10 text-white">
+          <h1 className="text-lg md:text-4xl mb-5 mt-4 font-heading bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
             Looking to elevate your digital presence?
           </h1>
           <p className="opacity-90 mb-7 px-10">

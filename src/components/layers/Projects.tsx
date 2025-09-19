@@ -120,7 +120,7 @@ export default function Projects() {
     <div>
       <h1
         id="projects"
-        className="text-center text-[40px] font-heading mb-10 text-white"
+        className="text-center text-lg md:text-4xl mb-10 font-heading bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent"
       >
         MY RECENT PROJECTS
       </h1>

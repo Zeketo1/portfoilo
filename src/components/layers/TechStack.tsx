@@ -35,7 +35,7 @@ export default function TechStack() {
   return (
     <section id="stack" className="w-full py-10 text-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-center text-[40px] font-heading mb-10 text-white">
+        <h2 className="text-lg md:text-4xl mb-4 font-heading bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
           My Tech Stack
         </h2>
         <div className="flex items-center flex-wrap justify-center gap-10">

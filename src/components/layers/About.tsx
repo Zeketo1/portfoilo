@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <h1
         id="about"
-        className="text-center text-[40px] font-heading mb-10 text-white"
+        className="text-center text-lg md:text-4xl mb-5 font-heading bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent"
       >
         ABOUT ME{" "}
       </h1>

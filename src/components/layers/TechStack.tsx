@@ -13,6 +13,7 @@ import stack10 from "../../assets/stack/redux.png";
 import stack11 from "../../assets/stack/typescript.png";
 import stack12 from "../../assets/stack/eoion.png";
 import stack13 from "../../assets/tech/convex_logo.svg";
+import stack14 from "../../assets/stack/tanstack.svg";
 
 export default function TechStack() {
   const technologies = [
@@ -21,6 +22,7 @@ export default function TechStack() {
     { name: "Javascript", icon: stack3 },
     { name: "Firebase", icon: stack5 },
     { name: "Convex", icon: stack13 },
+    { name: "TanStack", icon: stack14 },
     // { name: "MySql", icon: stack4 },
     { name: "Eoion", icon: stack12 },
     { name: "ReactJs", icon: stack8 },

@@ -10,7 +10,7 @@ export default function About() {
         ABOUT ME{" "}
       </h1>
       <div className="text-[18px] w-full flex flex-col items-center gap-10 mb-10">
-        <div className="w-[70%] text-center opacity-90">
+        <div className="md:w-[70%] w-[90%] text-center opacity-90">
           Hello my name is <span className="text-blue-500">IKORO FRANCIS</span>,
           I’m a developer driven by a commitment to transform ideas into
           powerful, seamless user experiences. With expertise in Next.js and

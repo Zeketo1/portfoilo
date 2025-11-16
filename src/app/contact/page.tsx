@@ -54,9 +54,9 @@ export default function Contact() {
                 Gmail
               </p>
               <a
-                href="mailto:zek.tech24@gmail.com"
+                href="mailto:ikorofrancis24@gmail.com"
                 className="text-[14px] font-heading underline"
-              >{`zek.tech24@gmail.com`}</a>
+              >{`ikorofrancis24@gmail.com`}</a>
             </div>
           </div>
           <div className="flex items-center gap-5 mb-7">

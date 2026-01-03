@@ -2,7 +2,7 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
 import React from "react";
-import Me from "../../assets/WhatsApp Image 2025-01-12 at 06.42.53_7f203de7.jpg";
+import Me from "../../assets/me.png";
 import { FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";

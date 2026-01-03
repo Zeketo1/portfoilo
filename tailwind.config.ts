@@ -21,7 +21,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        heading: ["Bitter", "serif"],
+        heading: ["Roboto Slab", "serif"],
         text: ["Raleway", "sans-serif"],
       },
     },

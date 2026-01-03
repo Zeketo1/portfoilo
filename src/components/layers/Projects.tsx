@@ -10,6 +10,7 @@ import project7 from "../../assets/projects/project9.png";
 import project8 from "../../assets/projects/project10.png";
 import project9 from "../../assets/projects/project11.png";
 import project10 from "../../assets/projects/project12.png";
+import project11 from "../../assets/projects/project13.png";
 import nextjs from "../../assets/tech/next.png";
 import react from "../../assets/tech/reactjs.png";
 import typescript from "../../assets/tech/typescript.png";
@@ -20,28 +21,22 @@ import tailwind from "../../assets/tech/tailwind.png";
 import css from "../../assets/tech/css.png";
 import python from "../../assets/tech/python.png";
 import convex from "../../assets/tech/convex_logo.svg";
+import nodejs from "../../assets/tech/nodejs.png";
+import tanstack from "../../assets/stack/tanstack.svg";
+import mongodb from "../../assets/tech/mongodb.png";
 
 import Image from "next/image";
 
 export default function Projects() {
   const projects = [
     {
-      title: "/meta-blog",
-      link: "https://meta-blog-lemon.vercel.app/",
-      header: "MetaBlog",
-      image: project1,
-      tech: [react, firebase, tailwind, javascript],
+      title: "/martins-weds-innie",
+      link: "https://martins-weds-innie.vercel.app/",
+      header: "Martins-weds-innie",
+      image: project11,
+      tech: [react, nodejs, tanstack, mongodb],
       description:
-        "Metablog is a platform designed for sharing insightful and informative content across various topics.",
-    },
-    {
-      title: "/moonlit",
-      link: "https://moonlit-tau.vercel.app/",
-      header: "Moonlit",
-      image: project7,
-      tech: [html, css, javascript, python],
-      description:
-        "A full-stack platform for seamless hotel reservations, user management, and administrative oversight with secure authentication and real-time updates.",
+        "A personalized wedding website designed to share the couple's story, event details, and manage guest RSVPs for their special day."
     },
     {
       title: "/teeceehub",
@@ -60,6 +55,24 @@ export default function Projects() {
       tech: [react, tailwind],
       description:
         "Kings-precise cleaning, We offer a wide range of professional cleaning services to suit every space, ensuring a clean, hygienic, and welcoming environment.",
+    },
+    {
+      title: "/moonlit",
+      link: "https://moonlit-tau.vercel.app/",
+      header: "Moonlit",
+      image: project7,
+      tech: [html, css, javascript, python],
+      description:
+        "A full-stack platform for seamless hotel reservations, user management, and administrative oversight with secure authentication and real-time updates.",
+    },
+    {
+      title: "/meta-blog",
+      link: "https://meta-blog-lemon.vercel.app/",
+      header: "MetaBlog",
+      image: project1,
+      tech: [react, firebase, tailwind, javascript],
+      description:
+        "Metablog is a platform designed for sharing insightful and informative content across various topics.",
     },
     {
       title: "/rheem",

@@ -144,7 +144,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative">
+    <div className="max-w-[1400px] mx-auto relative">
       <Banner />
       <div className="py-4 md:py-10 w-full">
         <StarsBackground />

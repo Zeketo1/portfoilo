@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { PinContainer } from "../ui/3d-pin";
 import project1 from "../../assets/projects/project2.png";
 import project2 from "../../assets/projects/project3.png";
@@ -11,6 +12,7 @@ import project8 from "../../assets/projects/project10.png";
 import project9 from "../../assets/projects/project11.png";
 import project10 from "../../assets/projects/project12.png";
 import project11 from "../../assets/projects/project13.png";
+import project12 from "../../assets/projects/project14.png";
 import nextjs from "../../assets/tech/next.png";
 import react from "../../assets/tech/reactjs.png";
 import typescript from "../../assets/tech/typescript.png";
@@ -28,6 +30,22 @@ import mongodb from "../../assets/tech/mongodb.png";
 import Image from "next/image";
 
 export default function Projects() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen size
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const itemsPerPage = isMobile ? 5 : 9;
   const projects = [
     {
       title: "/martins-weds-innie",
@@ -37,6 +55,15 @@ export default function Projects() {
       tech: [react, nodejs, tanstack, mongodb],
       description:
         "A personalized wedding website designed to share the couple's story, event details, and manage guest RSVPs for their special day."
+    },
+    {
+      title: "abamba",
+      link: "https://abamba.com.ng/",
+      header: "Abamba",
+      image: project12,
+      tech: [nextjs, nodejs, tanstack, mongodb],
+      description:
+        "A comprehensive multi-vendor e-commerce marketplace that empowers sellers to seamlessly onboard, manage product listings, and scale their digital presence."
     },
     {
       title: "/teeceehub",
@@ -129,6 +156,31 @@ export default function Projects() {
     },
   ];
 
+  // Pagination logic
+  const totalPages = Math.ceil(projects.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedProjects = projects.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    console.log('Changing to page:', page);
+    setCurrentPage(page);
+    // Scroll to projects section
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handlePrevious = () => {
+    if (currentPage > 1) {
+      handlePageChange(currentPage - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentPage < totalPages) {
+      handlePageChange(currentPage + 1);
+    }
+  };
+
   return (
     <div>
       <h1
@@ -137,9 +189,9 @@ export default function Projects() {
       >
         MY RECENT PROJECTS
       </h1>
-      <div className="w-full flex justify-center mb-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 md:w-[80%] gap-[100px]">
-          {projects.map((item, i) => (
+      <div className="w-full flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:w-[80%] gap-y-[70px] gap-x-[100px]">
+          {paginatedProjects.map((item, i) => (
             <PinContainer key={i} title={item.title} href={item.link}>
               <div className="flex gap-3 justify-between basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[21rem] ">
                 <div className="flex items-center justify-between">
@@ -158,8 +210,8 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-                <div className="text-base !m-0 !p-0 font-normal">
-                  <span className="text-slate-500 ">{item.description}</span>
+                <div className="text-base !m-0 !p-0 font-normal h-[72px]">
+                  <span className="text-slate-500 line-clamp-3">{item.description}</span>
                 </div>
                 <Image
                   src={item.image}
@@ -172,6 +224,48 @@ export default function Projects() {
           ))}
         </div>
       </div>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="relative flex justify-center items-center gap-4 my-20 z-50 pointer-events-auto">
+          <button
+            onClick={handlePrevious}
+            disabled={currentPage === 1}
+            className={`px-4 py-2 rounded-md transition-all pointer-events-auto ${currentPage === 1
+              ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
+              : 'bg-blue-500 text-white hover:bg-blue-600'
+              }`}
+          >
+            Previous
+          </button>
+
+          <div className="flex gap-2">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`w-10 h-10 rounded-md transition-all pointer-events-auto ${currentPage === page
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+              >
+                {page}
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={handleNext}
+            disabled={currentPage === totalPages}
+            className={`px-4 py-2 rounded-md transition-all pointer-events-auto ${currentPage === totalPages
+              ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
+              : 'bg-blue-500 text-white hover:bg-blue-600'
+              }`}
+          >
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "./index.css"
 import Logo from "@/common/Logo";
 import { HoverBorderGradient } from "@/components/ui/button";
 import Link from "next/link";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import Navigation from "@/components/utils/navigation";

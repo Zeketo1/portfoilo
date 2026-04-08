@@ -3,7 +3,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
 import React from "react";
 import Me from "../../assets/me.png";
-import { FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";

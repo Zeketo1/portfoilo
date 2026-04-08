@@ -13,6 +13,7 @@ import project9 from "../../assets/projects/project11.png";
 import project10 from "../../assets/projects/project12.png";
 import project11 from "../../assets/projects/project13.png";
 import project12 from "../../assets/projects/project14.png";
+import project13 from "../../assets/projects/project15.png";
 import nextjs from "../../assets/tech/next.png";
 import react from "../../assets/tech/reactjs.png";
 import typescript from "../../assets/tech/typescript.png";
@@ -47,6 +48,15 @@ export default function Projects() {
 
   const itemsPerPage = isMobile ? 5 : 9;
   const projects = [
+    {
+      title: "/alienverse",
+      link: "https://alienverse-orpin.vercel.app/",
+      header: "Alienverse",
+      image: project13,
+      tech: [react, tailwind],
+      description:
+        "A unique NFT collection that brings high-end digital design and extraterrestrial storytelling to the blockchain."
+    },
     {
       title: "/martins-weds-innie",
       link: "https://martins-weds-innie.vercel.app/",

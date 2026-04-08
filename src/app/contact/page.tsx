@@ -35,7 +35,7 @@ export default function Contact() {
           className="h-[150px] w-[150px] xl:h-[200px] xl:w-[200px] object-cover rounded-full absolute"
         />
         <div className="flex flex-col gap-10 h-[70%] md:h-[72%] w-[90%] md:w-[80%] xl:w-[60%] border border-white rounded-[100px_0_100px_0] py-20 px-10">
-          <div className="flex items-center gap-5 mt-5">
+          {/* <div className="flex items-center gap-5 mt-5">
             <FaPhone className="text-[18px] rotate-90 text-blue-500" />
             <div>
               <p className="opacity-80 text-xs bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
@@ -46,7 +46,7 @@ export default function Contact() {
                 className="text-[14px] font-heading underline"
               >{`+2348134240564`}</a>
             </div>
-          </div>
+          </div> */}
           <div className="flex items-center gap-5">
             <MdOutlineEmail className="text-[19px] text-blue-500" />
             <div>
@@ -72,9 +72,9 @@ export default function Contact() {
             <Link href="https://github.com/Zeketo1" target="_blank">
               <FaGithub className="text-[25px]" />
             </Link>
-            <Link href="https://wa.me/2348134240564" target="_blank">
+            {/* <Link href="https://wa.me/2348134240564" target="_blank">
               <FaWhatsapp className="text-[25px]" />
-            </Link>
+            </Link> */}
             <Link
               href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08"
               target="_blank"

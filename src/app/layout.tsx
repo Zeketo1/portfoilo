@@ -87,9 +87,9 @@ export default function RootLayout({
                 <Link href="https://github.com/Zeketo1" target="_blank">
                   <FaGithub className="text-[25px]" />
                 </Link>
-                <Link href="https://wa.me/qr/YB2OLDP33P3UF1" target="_blank">
+                {/* <Link href="https://wa.me/qr/YB2OLDP33P3UF1" target="_blank">
                   <FaWhatsapp className="text-[25px]" />
-                </Link>
+                </Link> */}
                 <Link
                   href="https://x.com/ikorofrancis1?t=e60u2J_EbEekrphWLDmCuA&s=08"
                   target="_blank"
